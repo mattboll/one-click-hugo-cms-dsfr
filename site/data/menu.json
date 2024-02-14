@@ -1,0 +1,14 @@
+{
+  "title": "Nom du site / service",
+  "subtitle": "baseline - précisions sur l'organisation",
+  "liens": [
+    {
+      "text": "Blog",
+      "url": "/post"
+    },
+    {
+      "text": "Accessibilité",
+      "url": "/accessibilité"
+    }
+  ]
+}

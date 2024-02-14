@@ -1,7 +1,9 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+languageCode = "fr-FR"
+languageLang = "fr"
+defaultContentLanguage = "fr"
+defaultContentLang = "fr"
+title = "Nom du site / service"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -10,3 +12,8 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
 images = ["img/og-image.jpg"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

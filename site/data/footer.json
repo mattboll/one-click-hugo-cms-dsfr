@@ -1,4 +1,21 @@
 {
-    "title": "Newsletter subscribe",
-    "blurb": "Get awesome news from us in your inbox every two weeks. Be the first to learn about new products."
+  "text": "texte du footer",
+  "liens": [
+    {
+      "text": "Accessibilité : non conforme",
+      "url": "/"
+    },
+    {
+      "text": "Mentions légales",
+      "url": "/"
+    },
+    {
+      "text": "Données personnelles",
+      "url": "/"
+    },
+    {
+      "text": "Gestion des cookies",
+      "url": "/"
+    }
+  ]
 }

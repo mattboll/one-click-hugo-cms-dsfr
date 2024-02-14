@@ -1,27 +1,40 @@
-<nav data-nav class="flex justify-between items-center center bg-white divider-grey relative">
-
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
-
-	<!-- Primary Nav -->
-	<div data-mobile-menu class="mobile-menu-container">
-		<svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
-			<rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
-			<rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
-			<rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
-		</svg>
+<header role="banner" class="fr-header">
+	<div class="fr-header__body">
+		<div class="fr-container">
+			<div class="fr-header__body-row">
+				<div class="fr-header__brand fr-enlarge-link">
+					<div class="fr-header__brand-top">
+						<div class="fr-header__logo">
+							<p class="fr-logo">
+								République
+								<br>Française
+							</p>
+						</div>
+					</div>
+					<div class="fr-header__service">
+						<a href="/" title="Accueil - {{ $.Site.Data.menu.title }}">
+							<p class="fr-header__service-title">
+								{{ $.Site.Data.menu.title }}
+							</p>
+						</a>
+						<p class="fr-header__service-tagline">{{ $.Site.Data.menu.subtitle}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<ul class="flex b grey-3 nav-menu">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
-
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
-
-</nav>
+	<div class="fr-header__menu fr-modal" id="modal-491" aria-labelledby="button-492">
+		<div class="fr-container"> <button class="fr-btn--close fr-btn" aria-controls="modal-491"
+				title="Fermer"> Fermer </button>
+			<div class="fr-header__menu-links"> </div>
+			<nav class="fr-nav" id="navigation-494" role="navigation" aria-label="Menu principal">
+				<ul class="fr-nav__list">
+					{{ range .Site.Data.menu.liens }}
+					<li class="fr-nav__item"> <a class="fr-nav__link" href="{{ .url }}"
+							target="_self">{{ .text }}</a> </li>
+					{{ end }}
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
